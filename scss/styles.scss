@@ -33,20 +33,28 @@
     ------------------------
 */
 
-// Define base and accent colors
-$base-color: #3498db;
+// // Define base and accent colors
+// $base-color: #3498db;
+// $base-color-hover: darken($base-color, 10%);
+
+// // Define background colors
+// $background: #fff;
+// $background-alt: #f2f2f5;
+
+// // Define border colors
+// $border: #dcd9d9;
+
+// // Define text colors
+// $heading: #374054;
+// $text: #74808a;
+
+$base-color: #ECD3D9;
 $base-color-hover: darken($base-color, 10%);
-
-// Define background colors
-$background: #fff;
-$background-alt: #f2f2f5;
-
-// Define border colors
-$border: #dcd9d9;
-
-// Define text colors
-$heading: #374054;
-$text: #74808a;
+$background: #fcf9f4;
+$background-alt: #fcf9f4;
+$heading: #2D2F22;
+$text: #2D2F22;
+$border: #ECD3D9;
 
 /*
     ---------------------
@@ -294,15 +302,18 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    // color: #fff;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    // border: 3px solid #fff;
     border-radius: 30px;
     @include transition();
+    border: 2px solid #ECD3D9;
+    color: #ECD3D9;
+    background: transparent;
 
     &:hover {
-        color: $base-color;
-        background: #fff;
+        background: #ECD3D9;
+        color: #2D2F22;
         text-decoration: none;
     }
 }
@@ -350,7 +361,9 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    // background: url(../images/lead-bg.jpg);
+    background: #2D2F22;
+    color: #ECD3D9;
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -393,7 +406,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: none;
     z-index: 1;
 }
 
@@ -508,7 +521,7 @@ footer {
 .vtimeline-content {
     margin-left: 350px;
     background: #fff;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $border;
     padding: 15px;
     border-radius: 3px;
     text-align: left;
