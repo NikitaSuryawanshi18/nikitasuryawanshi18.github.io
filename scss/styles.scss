@@ -662,7 +662,6 @@ footer {
   text-align: center;
 
   .heading {
-    color: $heading;
     margin-bottom: 50px;
   }
 
@@ -694,14 +693,16 @@ footer {
 
     .project-info {
       h3 {
-        font-size: 1.5rem;
+        color: #2d2f22;
         margin-bottom: 15px;
+        font-weight: 300;
+        text-align: center;
       }
 
       p {
-        color: $text;
-        margin: 0 0 15px 0;
-        font-size: 0.9em;
+        color: #374054;
+        line-height: 1.6;
+        text-align: center;
       }
     }
   }
