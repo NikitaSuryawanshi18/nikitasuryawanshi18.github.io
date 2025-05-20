@@ -1,15 +1,3 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
 /*
     File Contents:
 
@@ -34,19 +22,6 @@
 */
 
 // // Define base and accent colors
-// $base-color: #3498db;
-// $base-color-hover: darken($base-color, 10%);
-
-// // Define background colors
-// $background: #fff;
-// $background-alt: #f2f2f5;
-
-// // Define border colors
-// $border: #dcd9d9;
-
-// // Define text colors
-// $heading: #374054;
-// $text: #74808a;
 
 $base-color: #ECD3D9;
 $base-color-hover: darken($base-color, 10%);
@@ -749,51 +724,49 @@ footer {
 */
 
 #skills {
-  background-color: #fcf9f4;
+  background-color: #fff;
   padding: 60px 20px;
   text-align: center;
 
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .heading {
+    color: #2D2F22;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .skills-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    margin-top: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .skill-category {
-    background: #fff;
-    padding: 25px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    width: 300px;
-    max-width: 90%;
     text-align: left;
 
     h3 {
-      font-size: 1.3rem;
       color: #2D2F22;
+      font-size: 1.25rem;
       margin-bottom: 15px;
     }
 
-    ul {
+    .skill-list {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
 
       li {
-        font-size: 1rem;
-        padding: 5px 0;
-        color: #374054;
-        position: relative;
-        padding-left: 20px;
-
-        &::before {
-          content: "✔️";
-          position: absolute;
-          left: 0;
-          top: 3px;
-        }
+        background-color: #ECD3D9;
+        color: #2D2F22;
+        padding: 8px 14px;
+        font-size: 0.95rem;
+        border-radius: 0px;
+        font-weight: 600;
+        white-space: nowrap;
       }
     }
   }
