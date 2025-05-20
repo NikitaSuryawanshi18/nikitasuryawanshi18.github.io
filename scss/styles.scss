@@ -725,29 +725,37 @@ footer {
 
 #skills {
   background-color: #fff;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 
   .heading {
     color: #2D2F22;
-    font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
   }
 
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 60px 80px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .skill-category {
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
       color: #2D2F22;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .skill-pills {
@@ -758,22 +766,20 @@ footer {
       span {
         background-color: #ECD3D9;
         color: #2D2F22;
+        font-size: 1rem; // Up from 0.95rem
         font-weight: 500;
-        padding: 8px 14px;
-        border-radius: 20px;
-        font-size: 0.95rem;
+        padding: 8px 16px;
+        border-radius: 25px;
         white-space: nowrap;
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: #eabfc9;
+          background-color: #e1aeb9;
         }
       }
     }
   }
 }
-
-
 
 /*
     -------------------------------
