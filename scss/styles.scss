@@ -666,52 +666,94 @@ footer {
         margin-bottom: 50px;
     }
 }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 
-.project {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 4px;
-}
-
-.project-image {
-    float: left;
-}
-
-.project-info {
-    // position: absolute;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // margin-left: 300px;
-    // padding: 15px;
-    position: relative;
-    margin: 0;
-    padding: 30px 20px;
-
-    h3 {
-        font-size: 1.5em;
-        font-weight: 300;
-        color: $heading;
-        margin: 0 0 15px 0;
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    p {
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.project {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-info {
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $heading;
+        argin: 0 0 15px 0;
+      }
+
+      p {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+      }
     }
+  }
 }
 
-.no-image {
-    .project-info {
-        position: relative;
-        margin: 0;
-        padding: 30px 15px;
-        transform: none;
-    }
-}
+// .project {
+//     position: relative;
+//     max-width: 900px;
+//     margin: 0 auto 30px auto;
+//     overflow: hidden;
+//     background: #fff;
+//     border-radius: 4px;
+// }
+
+// .project-image {
+//     float: left;
+// }
+
+// .project-info {
+//     // position: absolute;
+//     // top: 50%;
+//     // transform: translateY(-50%);
+//     // margin-left: 300px;
+//     // padding: 15px;
+//     position: relative;
+//     margin: 0;
+//     padding: 30px 20px;
+
+//     h3 {
+//         font-size: 1.5em;
+//         font-weight: 300;
+//         color: $heading;
+//         margin: 0 0 15px 0;
+//     }
+
+//     p {
+//         color: $text;
+//         margin: 0 0 15px 0;
+//         font-size: 0.9em;
+//     }
+// }
+
+// .no-image {
+//     .project-info {
+//         position: relative;
+//         margin: 0;
+//         padding: 30px 15px;
+//         transform: none;
+//     }
+// }
 
 #more-projects {
     display: none;
