@@ -780,6 +780,7 @@ footer {
   h2 {
     margin-bottom: 40px;
     color: #000;
+    
   }
 
   .contact-grid {
@@ -808,8 +809,6 @@ footer {
     flex-basis: 40%;
   }
 }
-
-
 
   form {
     display: flex;
@@ -852,6 +851,7 @@ footer {
   }
 
   .contact-info {
+    text-align: left;
     h3 {
       margin-bottom: 20px;
       color: #2D2F22;
