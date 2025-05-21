@@ -139,8 +139,8 @@ header {
     border-bottom: none;
 
     ul {
-        display: flex;
-        justify-content: space-around;
+        display: block;
+        // justify-content: space-around;
         background: #2d2f22;
         text-align: center;
         padding: 10px;
@@ -157,17 +157,15 @@ header {
         padding: 10px;
 
         &:hover {
-            color: $base-color-hover;
+            color: #fff;
             text-decoration: none;
             background: #eee;
             border-radius: 4px;
-            text-color: #fff;
         }
 
         &:focus {
-            color: $base-color;
+            color: #fff;
             text-decoration: none;
-            text-color: #fff;
         }
     }
 
