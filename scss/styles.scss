@@ -784,28 +784,31 @@ footer {
 
   .contact-grid {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   gap: 60px;
   max-width: 1000px;
   margin: 0 auto;
-  text-align: left;
-  min-height: 400px; // This is key for vertical centering
-  flex-wrap: wrap;
+  min-height: 400px;
+  flex-wrap: nowrap;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     align-items: stretch;
-    text-align: center;
     min-height: auto;
+    gap: 30px;
   }
 
-  form,
+  form {
+    flex-basis: 55%;
+    max-width: 500px;
+  }
+
   .contact-info {
-    flex: 1;
-    min-width: 320px;
+    flex-basis: 40%;
   }
 }
+
 
 
   form {
