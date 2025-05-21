@@ -115,14 +115,14 @@ body {
     }
 }
 
-@keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+// @keyframes dropHeader {
+//   0% {
+//     transform: translateY(-100%);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
 
 header {
     position: sticky;
@@ -131,10 +131,10 @@ header {
     right: 0;
     text-align: center;
     z-index: 999;
-    animation-name: dropHeader;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 0.75s;
+    // animation-name: dropHeader;
+    // animation-iteration-count: 1;
+    // animation-timing-function: ease;
+    // animation-duration: 0.75s;
     box-shadow: none;
     border-bottom: none;
 
