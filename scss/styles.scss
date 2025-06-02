@@ -795,29 +795,25 @@ footer {
   min-height: 400px;
   flex-wrap: nowrap;
 
-@media (max-width: 768px) {
-      flex-direction: column;
+  @media (max-width: 768px) {
+      .contact-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
     }
 
-  // @media (max-width: 768px) {
-  //     .contact-grid {
-  //   flex-direction: column;
-  //   align-items: center;
-  //   gap: 30px;
-  //   padding: 20px;
-  //   }
+    form,
+    .contact-info {
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+    }
 
-  //   form,
-  //   .contact-info {
-  //     width: 100%;
-  //     max-width: 400px;
-  //     text-align: left;
-  //   }
-
-  //   .contact-info {
-  //     margin-top: 20px;
-  //   }
-  // }
+    .contact-info {
+      margin-top: 20px;
+    }
+  }
 
   form {
     flex-basis: 55%;
@@ -890,6 +886,12 @@ footer {
       }
     }
   }
+}
+
+@media (max-width: 768px){
+    .contact-grid{
+        flex-direction: column;
+    }
 }
 
 
